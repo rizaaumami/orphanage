@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@color/merah">
+
+    <ImageView
+        android:id="@+id/iv_gambar_panti"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent"
+        android:src="@drawable/panti"
+        android:layout_marginTop="30dp"
+        android:outlineAmbientShadowColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_nama_panti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Panti Asuhan Peduli Anak Yatim"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_gambar_panti"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informasi Panti"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama_panti"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv_lokasi"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_location_on_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_info"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_lokasi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Jl. Kikim II No.18, Demang Lebar Daun, Kec. Ilir Bar. I, Kota Palembang, Sumatera Selatan 30151, Indonesia"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/iv_lokasi"
+        app:layout_constraintStart_toEndOf="@+id/iv_lokasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_phone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_phone_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lokasi"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_telephone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0852-7394-9990"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/iv_phone"
+        app:layout_constraintStart_toEndOf="@+id/iv_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Panti"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_telephone"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_isi_deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pertahun 2023 Seedeka tidak melakukan pengumpulan donasi atas nama Panti Asuhan (tertentu). Oleh sebab itu bagi Sahabat yang ingin memberikan donasi dapat berkunjung menggunakan fitur kunjungi atau hubungi nomor telpon yang tertera di artikel panti asuhan masing-masing. Adapun program donasi yang ada di website Seedeka adalah program tematik yang ditujukan bagi adik-adik di Panti Asuhan di Seluruh Indonesia."
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_deskripsi"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="15dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

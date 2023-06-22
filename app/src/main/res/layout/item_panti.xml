@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/iv_foto"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Panti"
+            android:layout_toEndOf="@+id/iv_foto"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="4dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:justificationMode="inter_word"/>
+
+        <ImageView
+            android:id="@+id/ic_lokasi"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_location_on_24"
+            android:layout_toEndOf="@+id/iv_foto"
+            android:layout_below="@+id/tv_judul"/>
+
+        <TextView
+            android:id="@+id/tv_tempat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jakabaring, Palembang"
+            android:layout_below="@id/tv_judul"
+            android:layout_toEndOf="@id/ic_lokasi"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:justificationMode="inter_word"/>
+
+        <ImageView
+            android:id="@+id/ic_phone"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_phone_24"
+            android:layout_toEndOf="@+id/iv_foto"
+            android:layout_below="@+id/tv_tempat"/>
+
+        <TextView
+            android:id="@+id/tv_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="082269647781"
+            android:layout_below="@id/tv_tempat"
+            android:layout_toEndOf="@id/ic_phone"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:justificationMode="inter_word"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
