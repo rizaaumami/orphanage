@@ -37,7 +37,7 @@
             android:layout_below="@+id/tv_judul"/>
 
         <TextView
-            android:id="@+id/tv_tempat"
+            android:id="@+id/tv_lokasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jakabaring, Palembang"
@@ -55,14 +55,14 @@
             android:layout_height="24dp"
             android:src="@drawable/ic_phone_24"
             android:layout_toEndOf="@+id/iv_foto"
-            android:layout_below="@+id/tv_tempat"/>
+            android:layout_below="@+id/tv_lokasi"/>
 
         <TextView
             android:id="@+id/tv_telephone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="082269647781"
-            android:layout_below="@id/tv_tempat"
+            android:layout_below="@id/tv_lokasi"
             android:layout_toEndOf="@id/ic_phone"
             android:layout_marginStart="5dp"
             android:textSize="18sp"

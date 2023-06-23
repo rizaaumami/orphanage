@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class DetailActivity extends AppCompatActivity {
+public class DetailPantiActivity extends AppCompatActivity {
+    private DetailPantiActivity binding;
+    private PantiItem pantiItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

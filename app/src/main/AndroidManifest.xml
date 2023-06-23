@@ -13,10 +13,10 @@
         android:theme="@style/Theme.Orphanage"
         tools:targetApi="31">
         <activity
-            android:name=".DetailActivity"
+            android:name=".DetailPantiActivity"
             android:exported="false" />
         <activity
-            android:name=".UpdateActivity"
+            android:name=".UpdatePantiActivity"
             android:exported="false" />
         <activity
             android:name=".InputActivity"
